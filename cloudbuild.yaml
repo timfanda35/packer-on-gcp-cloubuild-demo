@@ -1,0 +1,7 @@
+steps:
+- name: 'hashicorp/packer'
+  env:
+  - 'GCP_PROJECT_ID=$PROJECT_ID'
+  args:
+  - build
+  - template.json
